@@ -1,0 +1,66 @@
+body{
+    background-image:url(../../Assets/Images/login_bg.jpg);
+    background-size: cover;
+}
+
+.container.login_container{
+    position: absolute;
+    right: 0rem;
+    top:0rem;
+    width: 40%;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 0fr;
+    gap:2rem;
+    background-color: rgba(0,0,0,0.3);
+    border-top-left-radius:10rem ;
+    border-bottom-left-radius:10rem ;
+    padding: 2rem 2rem 2rem 2rem ;
+    height: 100%;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 4rem;
+}
+.login_form >input{
+    width: 90%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: var(--color-white);
+}
+
+.login_form{
+    text-align: center;
+}
+
+.login_form > button{
+    margin-left: 8.5rem;
+    margin-bottom: 1rem;
+}
+
+.login_form.login_link{
+    margin-top:1rem;
+}
+
+
+/*medium devices*/
+@media screen and (max-width: 1024px){
+   .container.contact_container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   }
+}
+/*small devices*/
+@media screen and (max-width: 600px){
+   .container.contact_container{
+    width: var(--container-width-sm);
+   }
+}

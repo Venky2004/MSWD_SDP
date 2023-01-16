@@ -1,0 +1,24 @@
+.container.search_container{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.search_input > input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.search_input{
+    display: flex;
+    }
+.search_icon{
+    position: relative;
+    top:1rem;
+    right: 2rem;
+}
